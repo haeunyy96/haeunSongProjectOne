@@ -2,12 +2,13 @@
 
 html {
     font-size: 125%;
+    background-color: black;
 }
 
 body {
     font-family: $primaryFont;
     font-size: $baseFontSize;
-    // color: $primary;
+    color: $primary;
 }
 
 h1,h2,h3,h4 {
