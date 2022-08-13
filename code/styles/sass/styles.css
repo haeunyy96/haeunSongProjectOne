@@ -303,6 +303,7 @@ h3, h4 {
   font-weight: bold;
   line-height: 58px;
   letter-spacing: 2.2px;
+  margin-bottom: 25px;
 }
 
 p {
@@ -471,7 +472,6 @@ header img {
 }
 .party h3 {
   color: #FF8327;
-  margin-bottom: 25px;
 }
 .party p {
   margin-bottom: 35px;
@@ -479,4 +479,21 @@ header img {
 
 .image img {
   width: 100%;
+}
+
+.events {
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventsImgContainer {
+  width: 32%;
+}
+.eventsImgContainer img {
+  padding-top: 10px;
+}
+
+.eventsTextContainer {
+  width: 66%;
 }/*# sourceMappingURL=styles.css.map */

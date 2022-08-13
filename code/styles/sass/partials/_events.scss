@@ -1,0 +1,16 @@
+.events {
+    padding: 150px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eventsImgContainer {
+    width: 32%;
+
+    img {
+        padding-top: 10px;
+    }
+}
+.eventsTextContainer {
+    width: 66%;
+}
