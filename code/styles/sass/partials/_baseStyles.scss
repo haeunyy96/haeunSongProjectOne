@@ -25,17 +25,16 @@ a {
     letter-spacing: 1.9px;
 }
 .button {
-    @include fontSize(45);
+    @include fontSize(35);
     font-family: $secondaryFont;
-    border: 2px solid $secondary;
-    background-color: $secondary;
-    padding: 10px 30px;
+    background-color: $tertiary;
+    padding: 5px 35px;
     transition: 0.3s;
     cursor: pointer;
 
     &:hover,
     &:focus {
         background-color: $primary;
-        color: $secondary;
+        color: $tertiary;
     }
 }

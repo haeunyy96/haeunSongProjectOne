@@ -2,13 +2,14 @@ header {
     background-image: url(../../assets/home-image-1.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 80vh;
+    min-height: 100vh;
     z-index: -1;
 
     img {
         position: absolute;
         right: 0px;
-        top:330px;
+        top:280px;
+        z-index: 0;
     }
 }
 .headerBannerFlex {

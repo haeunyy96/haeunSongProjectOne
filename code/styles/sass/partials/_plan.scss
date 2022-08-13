@@ -1,0 +1,42 @@
+.plan {
+    background-color: $quinary;
+    padding: 150px 0;
+    position: relative;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    li {
+        width: 42%;
+    }
+
+    img {
+        position: absolute;
+    }
+
+    h3 {
+        margin-bottom: 11px;
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+}
+
+.location {
+    text-align: right;
+}
+
+.image1 {
+    left: 0;
+    top: -50px;
+}
+
+.image2 {
+    right: 0;
+    bottom: -50px;
+
+}
