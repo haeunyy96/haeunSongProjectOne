@@ -2,7 +2,7 @@
 
 html {
     font-size: 125%;
-    background-color: black;
+    background-color: $quaternary;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
     color: $primary;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,p {
     margin: 0;
 }
 
@@ -20,12 +20,13 @@ h1 {
     color: $secondary;
     @include fontSize(261.4);
     letter-spacing: 2.4px;
+    line-height: 0.9;
 }
 
 h2 {
     @include fontSize(83.2);
     font-weight: bold;
-    line-height: 94.7px;
+    line-height: 0;
     letter-spacing: 2.6px;
 }
 

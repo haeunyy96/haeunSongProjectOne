@@ -267,7 +267,7 @@ html {
 
 html {
   font-size: 125%;
-  background-color: black;
+  background-color: #111010;
 }
 
 body {
@@ -276,7 +276,7 @@ body {
   color: #FFFFFF;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   margin: 0;
 }
 
@@ -286,13 +286,14 @@ h1 {
   font-size: 261.4px;
   font-size: 13.07rem;
   letter-spacing: 2.4px;
+  line-height: 0.9;
 }
 
 h2 {
   font-size: 83.2px;
   font-size: 4.16rem;
   font-weight: bold;
-  line-height: 94.7px;
+  line-height: 0;
   letter-spacing: 2.6px;
 }
 
@@ -352,4 +353,75 @@ a {
 .button:hover, .button:focus {
   background-color: #FFFFFF;
   color: #FF8327;
+}
+
+.navBar {
+  position: -webkit-sticky;
+  position: sticky;
+  text-transform: uppercase;
+  padding: 50px 0;
+}
+.navBar ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 100px;
+}
+
+.logo {
+  font-family: "Tulpen One";
+  font-size: 60px;
+  font-size: 3rem;
+  text-transform: none;
+}
+
+header {
+  background-image: url(../../assets/home-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  z-index: -1;
+}
+header img {
+  position: absolute;
+  right: 0px;
+  top: 330px;
+}
+
+.headerBannerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.headerBannerContainer {
+  text-align: left;
+  z-index: 999;
+}
+
+.info {
+  padding: 150px 0;
+}
+.info ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.info li {
+  width: 48%;
+  text-align: left;
+  padding: 30px;
+}
+.info .fa-file {
+  padding: 15px 13px 15px 15px;
+}
+.info i {
+  font-size: 25px;
+  font-size: 1.25rem;
+  background-color: red;
+  padding: 12px 10px 12px 12px;
+  border-radius: 100%;
+}
+.info p {
+  padding-left: 68px;
 }/*# sourceMappingURL=styles.css.map */

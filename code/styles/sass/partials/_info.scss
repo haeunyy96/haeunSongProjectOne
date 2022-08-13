@@ -1,0 +1,38 @@
+.info {
+    padding: 150px 0;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    li {
+        width: 48%;
+        text-align: left;
+        padding: 30px;
+    }
+
+    // &::before {
+    //     display: inline-block;
+    //     text-rendering: auto;
+    //     -webkit-font-smoothing: antialiased;
+    //     font: var(--fa-font-solid);
+    //     content:/f015;
+    // }
+    
+    .fa-file {
+        padding: 15px 13px 15px 15px;
+    }
+    i {
+        @include fontSize(25);
+        background-color: red;
+        padding: 12px 10px 12px 12px;
+        border-radius: 100%;
+    }
+
+    p {
+        padding-left: 68px;
+    }
+}
+
+

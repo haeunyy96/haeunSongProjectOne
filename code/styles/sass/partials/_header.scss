@@ -1,0 +1,27 @@
+header {
+    background-image: url(../../assets/home-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    z-index: -1;
+
+    img {
+        position: absolute;
+        right: 0px;
+        top:330px;
+    }
+}
+.headerBannerFlex {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.headerBannerContainer {
+    text-align: left;
+    z-index: 999;
+
+
+}
