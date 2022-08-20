@@ -303,7 +303,7 @@ h3, h4 {
   font-weight: bold;
   line-height: 58px;
   letter-spacing: 2.2px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -375,14 +375,14 @@ a {
   text-transform: none;
 }
 
-header {
+.indexHeader {
   background-image: url(../../assets/home-image-1.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   z-index: -1;
 }
-header img {
+.indexHeader img {
   position: absolute;
   right: 0px;
   top: 280px;
@@ -496,4 +496,74 @@ header img {
 
 .eventsTextContainer {
   width: 66%;
+}
+.eventsTextContainer h3 {
+  color: #FF8327;
+}
+.eventsTextContainer p {
+  margin-bottom: 35px;
+}
+
+.gallery {
+  background-color: #220303;
+  padding: 100px 0;
+}
+.gallery ul {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery li {
+  width: 32%;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0 0px;
+}
+footer p {
+  margin-bottom: 0;
+}
+
+.contactHeader {
+  background-image: url(../../assets/contact-header-1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  z-index: -1;
+}
+
+.socialMedia {
+  padding-top: 50px;
+}
+
+.contactIcon {
+  display: flex;
+}
+.contactIcon li {
+  padding-right: 15px;
+}
+
+.contactDetails {
+  font-size: 39px;
+  font-size: 1.95rem;
+  line-height: 0.7;
+}
+
+.insertMsg {
+  background-color: #220303;
+  padding: 50px;
+  width: 50%;
+  align-items: right;
+}
+
+.blogHeader {
+  background-image: url(../../assets/contact-header-1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  z-index: -1;
+}
+
+.title {
+  padding-top: 90px;
 }/*# sourceMappingURL=styles.css.map */

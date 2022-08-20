@@ -13,4 +13,11 @@
 }
 .eventsTextContainer {
     width: 66%;
+    
+    h3 {
+        color: $secondary;
+    }
+    p {
+        margin-bottom: 35px;
+    }
 }

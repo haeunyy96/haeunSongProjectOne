@@ -1,0 +1,32 @@
+.contactHeader {
+    background-image: url(../../assets/contact-header-1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    z-index: -1;
+}
+
+.socialMedia {
+    padding-top: 50px;
+}
+
+.contactIcon {
+    display: flex;
+
+    li {
+    padding-right: 15px;
+    }
+
+}
+
+.contactDetails {
+    @include fontSize(39);
+    line-height: 0.7;
+}
+
+.insertMsg {
+    background-color: $quinary;
+    padding: 50px;
+    width: 50%;
+    align-items: right;
+}
