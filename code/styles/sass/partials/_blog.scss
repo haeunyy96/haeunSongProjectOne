@@ -2,10 +2,74 @@
     background-image: url(../../assets/contact-header-1.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 60vh;
+    min-height: 50vh;
     z-index: -1;
 }
 
 .title {
     padding-top: 90px;
+}
+
+.flexBlog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sideBar {
+    width: 28%;
+    background-color: $quinary;
+    padding: 70px;
+}
+
+.blog {
+    width: 70%;
+    padding: 70px;
+}
+.sideBarParagraph {
+    margin-bottom: 0;
+}
+.orangeText {
+    @include fontSize(39);
+    color: $secondary;
+    margin-bottom: 30px;
+}
+.recentPostTitle {
+    line-height: 1.15;
+}
+.recentPost {
+    list-style: inside;
+    line-height: 0.7;
+}
+
+
+
+
+
+.blogCommentsContainer {
+    padding-top: 100px;
+}
+
+.commentDisplay {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.sulaire, .renzo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sulaireImg, .renzoImg {
+    width: 14%;
+
+    img {
+       height: auto;
+    }
+}
+
+.sulaireText, .renzoText {
+    width: 80%;
+
 }

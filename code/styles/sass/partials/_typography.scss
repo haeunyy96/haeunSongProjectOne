@@ -38,9 +38,17 @@ h3, h4 {
     margin-bottom: 20px;
 }
 
+h4 {
+    @include fontSize(90)
+}
+
 p {
     @include fontSize(39);
     line-height: 30px;
     letter-spacing: 1.9px;
     margin-bottom: 20px;
+}
+
+li {
+    @include fontSize(39);
 }
