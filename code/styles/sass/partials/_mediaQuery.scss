@@ -59,6 +59,15 @@
             width: 100%;
         }
     }
+    .flexBlog {
+        flex-direction: column;
+        .sideBar {
+            width: 100%;
+        }
+        .blog {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width:500px) {
@@ -70,5 +79,9 @@
         li {
             width: 100%;
         }
+    }
+    .getInTouch {
+        // display: flex;
+        // flex-direction: column;
     }
 }

@@ -546,19 +546,34 @@ footer p {
   z-index: -1;
 }
 
+.getInTouch {
+  display: flex;
+  justify-content: space-between;
+}
+
 .socialMedia {
   padding-top: 50px;
+}
+.socialMedia p {
+  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 .contactIcon {
   display: flex;
 }
 .contactIcon li {
-  padding-right: 15px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-size: 1rem;
 }
 
 .contactDetails {
   line-height: 0.7;
+}
+.contactDetails li {
+  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 .insertMsg {
@@ -690,6 +705,15 @@ footer p {
     width: 100%;
   }
   .events .eventsTextContainer {
+    width: 100%;
+  }
+  .flexBlog {
+    flex-direction: column;
+  }
+  .flexBlog .sideBar {
+    width: 100%;
+  }
+  .flexBlog .blog {
     width: 100%;
   }
 }

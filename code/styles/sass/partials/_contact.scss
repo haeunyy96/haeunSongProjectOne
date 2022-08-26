@@ -6,21 +6,34 @@
     z-index: -1;
 }
 
+.getInTouch {
+    display: flex;
+    justify-content: space-between;
+}
 .socialMedia {
     padding-top: 50px;
+    
+    p {
+        @include fontSize(30);
+    }
 }
 
 .contactIcon {
     display: flex;
 
+
     li {
-    padding-right: 15px;
+        padding-right: 20px;
+        @include fontSize(20);
     }
 
 }
 
 .contactDetails {
     line-height: 0.7;
+    li {
+        @include fontSize(30);
+    }
 }
 
 .insertMsg {
