@@ -7,8 +7,7 @@
 }
 
 .getInTouch {
-    display: flex;
-    justify-content: space-between;
+    padding: 50px 0;
 }
 .socialMedia {
     padding-top: 50px;
@@ -41,4 +40,36 @@
     padding: 50px;
     width: 50%;
     align-items: right;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    box-shadow: 10px 10px $secondary;
+}
+
+input,
+textarea, {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-family: $primaryFont;
+}
+
+input {
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+textarea {
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+.contactButton {
+    width: 100%;
+    padding: 3px;
+    border: none;
+    color: white;
+    @include fontSize(20);
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
 }

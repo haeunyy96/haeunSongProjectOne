@@ -547,8 +547,7 @@ footer p {
 }
 
 .getInTouch {
-  display: flex;
-  justify-content: space-between;
+  padding: 50px 0;
 }
 
 .socialMedia {
@@ -581,6 +580,40 @@ footer p {
   padding: 50px;
   width: 50%;
   align-items: right;
+  position: absolute;
+  bottom: 0px;
+  right: 50px;
+  box-shadow: 10px 10px #FF8327;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Chathura";
+}
+
+input {
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.contactButton {
+  width: 100%;
+  padding: 3px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
 }
 
 .blogHeader {
