@@ -68,6 +68,29 @@
             width: 100%;
         }
     }
+    .getInTouch {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .socialMedia {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        ul {
+            justify-content: center;
+            // margin-left: 20px;
+        }
+    }
+    .insertMsg {
+        margin-top: 20px;
+        background-color: $quinary;
+        padding: 50px;
+        width: 100%;
+        position: static;
+        box-shadow: none;
+    }
 }
 
 @media (max-width:500px) {
@@ -80,8 +103,7 @@
             width: 100%;
         }
     }
-    .getInTouch {
-        // display: flex;
-        // flex-direction: column;
+    .title {
+        text-align: center;
     }
 }

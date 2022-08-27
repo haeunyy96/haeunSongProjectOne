@@ -749,6 +749,28 @@ textarea {
   .flexBlog .blog {
     width: 100%;
   }
+  .getInTouch {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .socialMedia {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .socialMedia ul {
+    justify-content: center;
+  }
+  .insertMsg {
+    margin-top: 20px;
+    background-color: #220303;
+    padding: 50px;
+    width: 100%;
+    position: static;
+    box-shadow: none;
+  }
 }
 @media (max-width: 500px) {
   .gallery {
@@ -759,5 +781,8 @@ textarea {
   }
   .gallery li {
     width: 100%;
+  }
+  .title {
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */
