@@ -1,10 +1,45 @@
+@media (max-width:1220px) {
+    .plan {
+            padding: 50px 0;
+            text-align: center;
+
+            ul {
+                flex-direction: column;
+            }
+
+            li {
+                width: 100%;
+            }
+
+            img {
+                position: static;
+            }
+
+            .location {
+                padding-top: 30px;
+                text-align: center;
+            }
+
+            .image2 {
+                padding-top: 30px;
+                box-shadow: 10px 10px $secondary;
+            }
+        }
+}
 @media (max-width:1000px) {
-    // .navBar {
-    //     display: none;
-    // }
-    // .hamburger {
-    //     display: flex;
-    // }
+    .navBar {
+        ul {
+            display: none;
+        }
+    }
+    .hamburger {
+        display: flex;
+        border: none;
+        background-color: transparent;
+    }
+    .headerBannerFlex {
+        padding-top:150px;
+    }
     .headerBannerContainer {
         text-align: center;
     }
@@ -22,26 +57,6 @@
         li {
             width: 100%;
             padding: 10px;
-        }
-    }
-    .plan {
-        padding: 50px 0;
-        text-align: center;
-        ul {
-            flex-direction: column;
-        }
-        li {
-            width: 100%;
-        }
-        img {
-            position: static;
-        }
-        .location {
-            padding-top: 30px;
-            text-align: center;
-        }
-        .image2 {
-            padding: 30px 0;
         }
     }
     .party {
@@ -67,6 +82,24 @@
         .blog {
             width: 100%;
         }
+    }
+    .sideBar {
+        text-align: center;
+    }
+    .sideBarImgAndText {
+        padding: 20px;
+    }
+    .sideBarImg{
+        transform: none;
+        padding-bottom: 20px;
+    }
+    .blogImgContainer {
+        img {
+            transform: none;
+        }
+    }
+    .blogCommentsContainer {
+        padding: 50px 30px;
     }
     .getInTouch {
         display: flex;

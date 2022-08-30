@@ -53,23 +53,17 @@ textarea, {
     background-color: transparent;
     color: #fff;
     font-family: $primaryFont;
+    padding: 10px 10px 20px 10px;
+    @include fontSize(30);
 }
 
 input {
     margin-right: 10px;
     margin-bottom: 30px;
+    width: 40%;
 }
 textarea {
     width: 100%;
     border: 1px solid #fff;
 }
 
-.contactButton {
-    width: 100%;
-    padding: 3px;
-    border: none;
-    color: white;
-    @include fontSize(20);
-    letter-spacing: 0.1rem;
-    margin-top: 30px;
-}

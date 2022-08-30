@@ -38,3 +38,13 @@ a {
         color: $tertiary;
     }
 }
+.commentButton,
+.contactButton {
+    width: 100%;
+    padding: 3px;
+    border: none;
+    color: white;
+    @include fontSize(30);
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+}

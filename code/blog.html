@@ -16,8 +16,11 @@
 </head>
 <body>
     <header class="blogHeader">
-        <nav class="navBar">
-            <div id="home" class="wrapper">
+        <nav>
+            <div id="home" class="wrapper navBar">
+                <button class="hamburger">
+                    <a href="#"><span>≡</span></a>
+                </button>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -35,46 +38,48 @@
     <main>
         <div class="flexBlog">
         <div class="sideBar">
-            <div class="sideBarImgContainer">
-                <img src="./assets/sidebar-image.jpg" alt="a bartender filling up a beer in a glass">
-            </div>
-            <div class="sideBarTextContainer">
-                <h3>Our mission</h3>
-                <p class="sideBarParagraph">Nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum.</p>
-                <a href="#" class="orangeText">Find out more</a>
-                <h3 class="recentPostTitle">Recent posts</h3>
-                <ul class="recentPost"> 
-                    <li>Donec facilisis tortor ut</li>
-                    <li>Augue lacinia at viverra</li>
-                    <li>Semper sed sapien metus</li>
-                    <li>Scelerisque nec pharetra id</li>
-                </ul>
-            </div>
+            <div class="sideBarImgAndText">
+                <img class="sideBarImg" src="./assets/sidebar-image.jpg" alt="a bartender filling up a beer in a glass">
+                <div class="sideBarTextContainer">
+                    <h3>Our mission</h3>
+                    <p class="sideBarParagraph">Nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum.</p>
+                    <a href="#" class="orangeText">Find out more</a>
+                    <h3 class="recentPostTitle">Recent posts</h3>
+                    <ul class="recentPost"> 
+                        <li><span>●</span> Donec facilisis tortor ut</li>
+                        <li><span>●</span> Augue lacinia at viverra</li>
+                        <li><span>●</span> Semper sed sapien metus</li>
+                        <li><span>●</span> Scelerisque nec pharetra id</li>
+                    </ul>
+                </div> <!-- END .sideBarTextContainer -->
+            </div> <!-- END .sideBarImgAndText -->
         </div> <!-- END .sideBar -->
         <div class="blog">
-            <div class="blogImgContainer">
-                <img src="./assets/post-image.jpg" alt="a table with four bar food dishes, including salads and sandwiches">
-            </div> <!-- END .blogImgContainer -->
-            <div class="blogTextContainer">
-                <h3>New menu!</h3>
-                <p>Monday January 30, 2019 by Saron</p>
-                <p class="blogTextP">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
-                <p class="blogTextP">In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
-                <p class="blogTextP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maiores natus laboriosam necessitatibus voluptatem quia aliquam excepturi veniam eligendi molestiae neque harum architecto, vero enim illo laborum hic ipsa soluta tempora rem iusto molestias? Tempora assumenda dolor molestias? Ad earum impedit veniam. Maxime ex vel error, quaerat voluptates porro consequatur commodi! Eius doloribus voluptatum esse nemo, harum quam delectus aliquam?.</p>
-                <p class="blogTextP">Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula.</p>
-            </div> <!-- END .blogTextContainer -->
+            <div class="blogImgAndText">
+                <div class="blogImgContainer">
+                    <img src="./assets/post-image.jpg" alt="a table with four bar food dishes, including salads and sandwiches">
+                </div> <!-- END .blogImgContainer -->
+                <div class="blogTextContainer">
+                    <h3>New menu!</h3>
+                    <p>Monday January 30, 2019 by Saron</p>
+                    <p class="blogTextP">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                    <p class="blogTextP">In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
+                    <p class="blogTextP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maiores natus laboriosam necessitatibus voluptatem quia aliquam excepturi veniam eligendi molestiae neque harum architecto, vero enim illo laborum hic ipsa soluta tempora rem iusto molestias? Tempora assumenda dolor molestias? Ad earum impedit veniam. Maxime ex vel error, quaerat voluptates porro consequatur commodi! Eius doloribus voluptatum esse nemo, harum quam delectus aliquam?.</p>
+                    <p class="blogTextP">Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula.</p>
+                </div> <!-- END .blogTextContainer -->
+            </div>
             <div class="blogCommentsContainer">
                 <h3>Comments:</h3>
                 <div class="commentDisplay">
                     <div class="sulaire">
-                        <img class="sulaireImg"src="./assets/comment-image-1.jpg" alt="photo of Sulaire, a commenter of the blog">
+                        <img src="./assets/comment-image-1.jpg" alt="photo of Sulaire, a commenter of the blog">
                         <div class="sulaireText">
                             <h5>Tuesday October 9th, 2019 by Sulaire</h5>
                             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus..</p>
                         </div>
                     </div>
                     <div class="renzo">
-                        <img class="renzoImg" src="./assets/comment-image-2.jpg" alt="photo of Renzo, a commenter of the blog">
+                        <img src="./assets/comment-image-2.jpg" alt="photo of Renzo, a commenter of the blog">
                         <div class="renzoText">
                             <h5>Wednesday October 10th, 2019 by Renzo</h5>
                             <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
@@ -83,16 +88,18 @@
                 </div>
                 <!-- END .commentDisplay -->
                 <div class="commentEntry">
-                    <form action="">
-                        <label for="name">Name</label>
-                        <input type="text" id="name">
-                        <label for="email">Email address</label>
-                        <input type="email" id="email">
+                    <form class="blogForm">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" id="email" placeholder="Email Address">
                         <br>
-                        <label for="comment">Comment</label>
-                        <input type="comment" rows="8" cols="100">
+
+                        <label for="comment"></label>
+                        <textarea type="comment" rows="5" cols="20" placeholder="Comment"></textarea>
                         <br>
-                        <input type="submit" value="Post Comment">
+                        <button class="button commentButton">Post Comment</button>
                     </form>
                 </div>
                 <!-- END .commentEntry -->

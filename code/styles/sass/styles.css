@@ -366,6 +366,18 @@ a {
   color: #BF2603;
 }
 
+.commentButton,
+.contactButton {
+  width: 100%;
+  padding: 3px;
+  border: none;
+  color: white;
+  font-size: 30px;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+}
+
 .navBar {
   position: -webkit-sticky;
   position: sticky;
@@ -473,11 +485,13 @@ a {
 .image1 {
   left: 0;
   top: -50px;
+  box-shadow: 10px 10px #FF8327;
 }
 
 .image2 {
   right: 0;
   bottom: -50px;
+  box-shadow: -10px 10px #FF8327;
 }
 
 .party {
@@ -506,6 +520,7 @@ a {
 }
 .eventsImgContainer img {
   padding-top: 10px;
+  box-shadow: 10px 10px #FF8327;
 }
 
 .eventsTextContainer {
@@ -593,11 +608,15 @@ textarea {
   background-color: transparent;
   color: #fff;
   font-family: "Chathura";
+  padding: 10px 10px 20px 10px;
+  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 input {
   margin-right: 10px;
   margin-bottom: 30px;
+  width: 40%;
 }
 
 textarea {
@@ -605,22 +624,11 @@ textarea {
   border: 1px solid #fff;
 }
 
-.contactButton {
-  width: 100%;
-  padding: 3px;
-  border: none;
-  color: white;
-  font-size: 20px;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  margin-top: 30px;
-}
-
 .blogHeader {
   background-image: url(../../assets/contact-header-1.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 50vh;
+  min-height: 60vh;
   z-index: -1;
 }
 
@@ -635,13 +643,37 @@ textarea {
 
 .sideBar {
   width: 28%;
+  background-color: #111010;
+  padding: 100px 20px 50px 50px;
+}
+
+.sideBarImgAndText {
   background-color: #220303;
-  padding: 70px;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBarImg {
+  transform: translate(-70px, -50px);
 }
 
 .blog {
   width: 70%;
-  padding: 70px;
+}
+
+.blogImgAndText {
+  background-color: #FF8327;
+  padding: 10px 0 5px 5px;
+}
+
+.blogImgContainer img {
+  transform: translate(50px, -50px);
+}
+
+.blogTextContainer {
+  background-color: #111010;
+  padding: 30px 50px;
 }
 
 .sideBarParagraph {
@@ -657,55 +689,59 @@ textarea {
 
 .recentPostTitle {
   line-height: 1.15;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
-.recentPost {
-  list-style: inside;
-  line-height: 0.7;
+.recentPost span {
+  color: #BF2603;
+  font-size: 20px;
+  font-size: 1rem;
 }
 
 .blogCommentsContainer {
-  padding-top: 100px;
+  padding-top: 50px;
+}
+.blogCommentsContainer h3 {
+  padding-bottom: 10px;
 }
 
 .commentDisplay {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .sulaire, .renzo {
   display: flex;
   justify-content: space-between;
 }
-
-.sulaireImg, .renzoImg {
+.sulaire img, .renzo img {
   width: 14%;
-}
-.sulaireImg img, .renzoImg img {
-  height: auto;
+  align-self: start;
 }
 
 .sulaireText, .renzoText {
   width: 80%;
+  padding-bottom: 30px;
+}
+.sulaireText h5, .renzoText h5 {
+  font-size: 40px;
+  font-size: 2rem;
+  color: #FF8327;
+  margin: 0 0 10px 0;
+  line-height: 0.4;
 }
 
-@media (max-width: 1000px) {
-  .headerBannerContainer {
-    text-align: center;
-  }
-  .indexHeader img {
-    display: none;
-  }
-  .info {
-    padding: 50px 0;
-  }
-  .info ul {
-    flex-direction: column;
-  }
-  .info li {
-    width: 100%;
-    padding: 10px;
-  }
+.blogForm input,
+.blogForm textarea {
+  border-bottom: 1px solid #FF8327;
+}
+.blogForm textarea {
+  border: 1px solid #FF8327;
+}
+
+@media (max-width: 1220px) {
   .plan {
     padding: 50px 0;
     text-align: center;
@@ -724,7 +760,37 @@ textarea {
     text-align: center;
   }
   .plan .image2 {
-    padding: 30px 0;
+    padding-top: 30px;
+    box-shadow: 10px 10px #FF8327;
+  }
+}
+@media (max-width: 1000px) {
+  .navBar ul {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    border: none;
+    background-color: transparent;
+  }
+  .headerBannerFlex {
+    padding-top: 150px;
+  }
+  .headerBannerContainer {
+    text-align: center;
+  }
+  .indexHeader img {
+    display: none;
+  }
+  .info {
+    padding: 50px 0;
+  }
+  .info ul {
+    flex-direction: column;
+  }
+  .info li {
+    width: 100%;
+    padding: 10px;
   }
   .party {
     padding: 50px 0 70px;
@@ -748,6 +814,22 @@ textarea {
   }
   .flexBlog .blog {
     width: 100%;
+  }
+  .sideBar {
+    text-align: center;
+  }
+  .sideBarImgAndText {
+    padding: 20px;
+  }
+  .sideBarImg {
+    transform: none;
+    padding-bottom: 20px;
+  }
+  .blogImgContainer img {
+    transform: none;
+  }
+  .blogCommentsContainer {
+    padding: 50px 30px;
   }
   .getInTouch {
     display: flex;

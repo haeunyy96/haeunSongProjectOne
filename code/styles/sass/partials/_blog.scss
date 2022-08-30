@@ -2,7 +2,7 @@
     background-image: url(../../assets/contact-header-1.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 50vh;
+    min-height: 60vh;
     z-index: -1;
 }
 
@@ -17,13 +17,38 @@
 
 .sideBar {
     width: 28%;
+    background-color: $quaternary;
+    padding: 100px 20px 50px 50px;
+}
+.sideBarImgAndText {
     background-color: $quinary;
-    padding: 70px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sideBarImg {  
+    transform:translate(-70px,-50px);
+
 }
 
 .blog {
     width: 70%;
-    padding: 70px;
+}
+
+.blogImgAndText {
+    // display: flex;
+    // flex-direction: column;
+    background-color: $secondary;
+    padding: 10px 0 5px 5px; 
+}
+.blogImgContainer {
+    img {
+        transform: translate(50px, -50px);
+    }
+}
+.blogTextContainer {
+    background-color: $quaternary;
+    padding: 30px 50px;
 }
 .sideBarParagraph {
     margin-bottom: 0;
@@ -35,10 +60,14 @@
 }
 .recentPostTitle {
     line-height: 1.15;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 .recentPost {
-    list-style: inside;
-    line-height: 0.7;
+    span {
+        color: $tertiary;
+        @include fontSize(20);
+    }
 }
 
 
@@ -46,30 +75,47 @@
 
 
 .blogCommentsContainer {
-    padding-top: 100px;
+    padding-top: 50px;
+    h3 {
+        padding-bottom: 10px;
+    }
 }
 
 .commentDisplay {
     display: flex;
     flex-direction: column;
-
-    
+    margin-bottom: 30px;
 }
 
 .sulaire, .renzo {
     display: flex;
-    justify-content: space-between;
-}
-
-.sulaireImg, .renzoImg {
-    width: 14%;
+    justify-content: space-between;   
 
     img {
-       height: auto;
+        width: 14%;
+        align-self: start;
     }
 }
 
 .sulaireText, .renzoText {
     width: 80%;
+    padding-bottom: 30px;
 
+    h5 {
+        @include fontSize(40);
+        color: $secondary;
+        margin: 0 0 10px 0;
+        line-height: 0.4;
+    }
+
+}
+
+.blogForm {
+    input, 
+    textarea {
+        border-bottom: 1px solid $secondary;
+    }
+    textarea {
+        border: 1px solid $secondary;
+    }
 }

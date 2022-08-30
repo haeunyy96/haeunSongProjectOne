@@ -16,8 +16,11 @@
 </head>
 <body>
     <header class="contactHeader">
-        <nav class="navBar">
-            <div id="home" class="wrapper">
+        <nav>
+            <div id="home" class="wrapper navBar">
+                <button class="hamburger">
+                    <a href="#"><span>≡</span></a>
+                </button>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -50,6 +53,7 @@
                 </ul>
             </div> <!-- END .socialMedia -->
             <div class="insertMsg">
+                <form>
                 <label for="name" class="sr-only">Name</label>
                 <input type="text" id="name" placeholder="Name">
 
@@ -57,7 +61,7 @@
                 <input type="email" id="email" placeholder="Email Address">
           
                 <label for="message" class="sr-only">Message</label>
-                <textarea type="message" id=message rows="7" cols="30" placeholder="Message"></textarea>
+                <textarea type="message" id=message rows="5" cols="30" placeholder="Message"></textarea>
                 <br>
                 <button class="button contactButton">Submit</button>
                 </form>
