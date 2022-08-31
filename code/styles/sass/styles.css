@@ -771,7 +771,7 @@ textarea {
   }
   #hamburger {
     display: flex;
-    color: #fff;
+    color: #FFFFFF;
   }
   .slideOutNav {
     display: flex;
@@ -831,19 +831,15 @@ textarea {
     flex-direction: column;
     text-align: center;
   }
-  .events .eventsImgContainer {
-    width: 100%;
-  }
-  .events .eventsTextContainer {
+  .events .eventsImgContainer,
+.events .eventsTextContainer {
     width: 100%;
   }
   .flexBlog {
     flex-direction: column;
   }
-  .flexBlog .sideBar {
-    width: 100%;
-  }
-  .flexBlog .blog {
+  .flexBlog .sideBar,
+.flexBlog .blog {
     width: 100%;
   }
   .sideBar {

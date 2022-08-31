@@ -34,46 +34,46 @@
     }
     #hamburger {
         display: flex;
-        color: #fff; 
-        // background-color: transparent;
-        // border: none;
+        color: $primary; 
     }
-        .slideOutNav {
-            display: flex;
-            background-color: $secondary;
-            color: $primary;
-            min-height: 100vh;
-            position: fixed;
-            top: 0;
-            padding: 30px 50px;
-            width: 100%;
-            max-width: 450px;
-            font-weight: bold;
-            display: flex;
-            flex-direction: column;
-            z-index: 99999;
-            left: -450px;
-            transition: 0.3s;
-    
-            &.open {
-                left: 0;
-            }
-    
-            button {
-                align-self: flex-end;
-            }
-    
-            a {
-                line-height: 2.2rem;
-    
-                &:hover,
-                &:focus {
-                    color: rgba($color: $primary, $alpha: 0.6);
-                }
+    .slideOutNav {
+        display: flex;
+        background-color: $secondary;
+        color: $primary;
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        padding: 30px 50px;
+        width: 100%;
+        max-width: 450px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        z-index: 99999;
+        left: -450px;
+        transition: 0.3s;
+
+        &.open {
+            left: 0;
+        }
+
+        button {
+            align-self: flex-end;
+        }
+
+        a {
+            line-height: 2.2rem;
+
+            &:hover,
+            &:focus {
+                color: rgba($color: $primary, $alpha: 0.6);
             }
         }
+    }
+    // SLIDE OUT NAV CODE CREDIT TO : E-COMMERCE CODE ALONG 
+
     .headerBannerFlex {
-        padding-top:150px;
+        padding-top: 150px;
     }
     .headerBannerContainer {
         text-align: center;
@@ -103,19 +103,14 @@
         padding: 50px 0;
         flex-direction: column;
         text-align: center;
-        .eventsImgContainer {
-            width: 100%;
-
-        }
-        .eventsTextContainer {
+        .eventsImgContainer,
+        .eventsTextContainer{
             width: 100%;
         }
     }
     .flexBlog {
         flex-direction: column;
-        .sideBar {
-            width: 100%;
-        }
+        .sideBar,
         .blog {
             width: 100%;
         }
@@ -153,7 +148,6 @@
         padding-bottom: 20px;
         ul {
             justify-content: center;
-            // margin-left: 20px;
         }
     }
     .insertMsg {

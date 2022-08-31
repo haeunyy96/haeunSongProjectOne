@@ -36,43 +36,43 @@
 }
 
 .blogImgAndText {
-    // display: flex;
-    // flex-direction: column;
     background-color: $secondary;
     padding: 10px 0 5px 5px; 
 }
+
 .blogImgContainer {
     img {
         transform: translate(50px, -50px);
     }
 }
+
 .blogTextContainer {
     background-color: $quaternary;
     padding: 30px 50px;
 }
+
 .sideBarParagraph {
     margin-bottom: 0;
 }
+
 .orangeText {
     @include fontSize(39);
     color: $secondary;
     margin-bottom: 30px;
 }
+
 .recentPostTitle {
     line-height: 1.15;
     margin-top: 30px;
     margin-bottom: 0;
 }
+
 .recentPost {
     span {
         color: $tertiary;
         @include fontSize(20);
     }
 }
-
-
-
-
 
 .blogCommentsContainer {
     padding-top: 50px;
