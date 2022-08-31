@@ -397,7 +397,8 @@ a {
   text-transform: none;
 }
 
-.hamburger {
+#hamburger,
+.slideOutNav {
   display: none;
 }
 
@@ -768,10 +769,38 @@ textarea {
   .navBar ul {
     display: none;
   }
-  .hamburger {
+  #hamburger {
     display: flex;
-    border: none;
-    background-color: transparent;
+    color: #fff;
+  }
+  .slideOutNav {
+    display: flex;
+    background-color: #FF8327;
+    color: #FFFFFF;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    padding: 30px 50px;
+    width: 100%;
+    max-width: 450px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    z-index: 99999;
+    left: -450px;
+    transition: 0.3s;
+  }
+  .slideOutNav.open {
+    left: 0;
+  }
+  .slideOutNav button {
+    align-self: flex-end;
+  }
+  .slideOutNav a {
+    line-height: 2.2rem;
+  }
+  .slideOutNav a:hover, .slideOutNav a:focus {
+    color: rgba(255, 255, 255, 0.6);
   }
   .headerBannerFlex {
     padding-top: 150px;
@@ -779,7 +808,9 @@ textarea {
   .headerBannerContainer {
     text-align: center;
   }
-  .indexHeader img {
+  .indexHeader img,
+.blogHeader img,
+.contactHeader img {
     display: none;
   }
   .info {
@@ -824,6 +855,9 @@ textarea {
   .sideBarImg {
     transform: none;
     padding-bottom: 20px;
+  }
+  .blogImgAndText {
+    padding: 5px;
   }
   .blogImgContainer img {
     transform: none;

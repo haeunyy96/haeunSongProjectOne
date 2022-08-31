@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet"> -->
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/d7e854893f.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -19,8 +20,8 @@
     <header class="indexHeader">
         <nav>
             <div id="home" class="wrapper navBar">
-                <button class="hamburger">
-                    <a href="#"><span>≡</span></a>
+                <button id="hamburger">
+                    <img src="./assets/menu-icon.svg" alt="open slide-out navigation menu">
                 </button>
                 <ul>
                     <li><a class="home" href="#home" style="color:#FF8327">Home</a></li>
@@ -29,7 +30,19 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </div> <!-- END. navBar -->
+            <div class="slideOutNav">
+                <button id="close">
+                    <img src="./assets/menu-icon.svg" alt="close slide-out navigation menu">
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- END. slideOutNav -->
         </nav><!-- END.navBar -->
         <div class="headerBannerFlex">
             <div class="headerBannerContainer">

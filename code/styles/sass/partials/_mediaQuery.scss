@@ -32,18 +32,55 @@
             display: none;
         }
     }
-    .hamburger {
+    #hamburger {
         display: flex;
-        border: none;
-        background-color: transparent;
+        color: #fff; 
+        // background-color: transparent;
+        // border: none;
     }
+        .slideOutNav {
+            display: flex;
+            background-color: $secondary;
+            color: $primary;
+            min-height: 100vh;
+            position: fixed;
+            top: 0;
+            padding: 30px 50px;
+            width: 100%;
+            max-width: 450px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            z-index: 99999;
+            left: -450px;
+            transition: 0.3s;
+    
+            &.open {
+                left: 0;
+            }
+    
+            button {
+                align-self: flex-end;
+            }
+    
+            a {
+                line-height: 2.2rem;
+    
+                &:hover,
+                &:focus {
+                    color: rgba($color: $primary, $alpha: 0.6);
+                }
+            }
+        }
     .headerBannerFlex {
         padding-top:150px;
     }
     .headerBannerContainer {
         text-align: center;
     }
-    .indexHeader {
+    .indexHeader,
+    .blogHeader,
+    .contactHeader {
         img {
             display: none;
         }
@@ -92,6 +129,9 @@
     .sideBarImg{
         transform: none;
         padding-bottom: 20px;
+    }
+    .blogImgAndText {
+        padding: 5px;
     }
     .blogImgContainer {
         img {
