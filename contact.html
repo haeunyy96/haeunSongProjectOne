@@ -20,19 +20,19 @@
         <nav>
             <div id="home" class="wrapper navBar">
                 <button id="hamburger">
-                    <img src="./assets/menu-icon.svg" alt="open slide-out navigation menu">
+                    <i class="fa fa-bars"></i>
                 </button>
                 <ul>
-                    <li><a class="home" href="#home" style="color:#FF8327">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a class="home" href="#home">Home</a></li>
+                    <li><a href="index.html">About</a></li>
                     <li><a href="index.html" class="logo">Bar One</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" style="color:#FF8327">Contact</a></li>
                 </ul>
             </div> <!-- END. navBar -->
             <div class="slideOutNav">
                 <button id="close">
-                    <img src="./assets/menu-icon.svg" alt="close slide-out navigation menu">
+                    <i class="fa-solid fa-x"></i>
                 </button>
                 <nav>
                     <ul>
@@ -41,6 +41,8 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
+            </div> <!-- END. slideOutNav -->
+        </nav><!-- END.navBar -->
             </div> <!-- END. slideOutNav -->
         </nav><!-- END.navBar -->
         <div class="wrapper title">
@@ -74,7 +76,7 @@
                 <input type="email" id="email" placeholder="Email Address">
           
                 <label for="message" class="sr-only">Message</label>
-                <textarea type="message" id=message rows="5" cols="30" placeholder="Message"></textarea>
+                <textarea type="message" id=message rows="4" cols="30" placeholder="Message"></textarea>
                 <br>
                 <button class="button contactButton">Submit</button>
                 </form>
