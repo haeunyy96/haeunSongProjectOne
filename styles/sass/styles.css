@@ -861,6 +861,9 @@ textarea {
 .events .eventsTextContainer {
     width: 100%;
   }
+  .planAhead, .eventsTextContainer {
+    padding-top: 30px;
+  }
   .flexBlog {
     flex-direction: column;
   }
@@ -872,11 +875,31 @@ textarea {
     text-align: center;
   }
   .sideBarImgAndText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px;
   }
   .sideBarImg {
     transform: none;
-    padding-bottom: 20px;
+    width: 48%;
+  }
+  .sideBarTextContainer {
+    width: 48%;
+  }
+  .sideBarTextContainer a:hover {
+    color: white;
+    transition: 500ms;
+  }
+  .ourMission{
+    margin: 15px 0;
+  }
+  .recentPostTitle {
+    margin: 5px 0 0 0;
+  }
+  .recentPost {
+    line-height: 0.9;
+    margin-bottom: 15px;
   }
   .blogImgAndText {
     padding: 5px;
