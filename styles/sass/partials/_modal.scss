@@ -1,5 +1,7 @@
 .modal {
     display: flex;
+    flex-direction: row;
+    overflow: hidden;
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
@@ -12,12 +14,44 @@
     color: black;
     padding: 50px;
     text-align: center;
-}
 
+    img {
+        // width: 47%;
+        // align-items: flex-end;
+        // max-height: fit-content;
+        display: none;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    button {
+        font-family: $primaryFont;
+        font-size: 1.5rem;
+        background-color: transparent;
+        border: solid 2px $primary;
+        border-radius: 5px 5px;
+        cursor: pointer;
+        padding: 0 30px;
+        margin-left: 10px;
+
+        &:hover {
+            background-color: $primary;
+            color: $secondary;
+        }
+    }
+}
 .spanClose {
     font-size: 3rem;
     cursor: pointer;
     &:hover {
         color: $primary;
     }
+}
+
+.modalEmail {
+    margin: 10px 0 20px 0;
+    width: 70%;
+    height: 40px;
 }

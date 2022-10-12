@@ -932,6 +932,8 @@ textarea {
 }
 .modal {
   display: flex;
+  flex-direction: row;
+  overflow: hidden;
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
@@ -945,6 +947,26 @@ textarea {
   padding: 50px;
   text-align: center;
 }
+.modal img {
+  display: none;
+}
+.modal h3 {
+  margin: 0;
+}
+.modal button {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: solid 2px #FFFFFF;
+  border-radius: 5px 5px;
+  cursor: pointer;
+  padding: 0 30px;
+  margin-left: 10px;
+}
+.modal button:hover {
+  background-color: #FFFFFF;
+  color: #FF8327;
+}
 
 .spanClose {
   font-size: 3rem;
@@ -952,4 +974,10 @@ textarea {
 }
 .spanClose:hover {
   color: #FFFFFF;
+}
+
+.modalEmail {
+  margin: 10px 0 20px 0;
+  width: 70%;
+  height: 40px;
 }/*# sourceMappingURL=styles.css.map */
