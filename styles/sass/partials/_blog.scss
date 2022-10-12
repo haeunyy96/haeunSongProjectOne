@@ -18,7 +18,7 @@
 .sideBar {
     width: 28%;
     background-color: $quaternary;
-    padding: 100px 20px 50px 50px;
+    padding: 100px 20px 50px 0;
 }
 .sideBarImgAndText {
     background-color: $quinary;
@@ -27,7 +27,7 @@
     flex-direction: column;
 }
 .sideBarImg {  
-    transform:translate(-70px,-50px);
+    transform:translate(-30px,-20px);
 
 }
 
@@ -42,7 +42,7 @@
 
 .blogImgContainer {
     img {
-        transform: translate(50px, -50px);
+        transform: translate(30px, -30px);
     }
 }
 

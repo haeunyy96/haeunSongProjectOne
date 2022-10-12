@@ -22,3 +22,16 @@
     display: none;
 }
 
+#hamburger {
+    font-size: 1.5rem;
+}
+#hamburger, #close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+        color: $primary;
+}
+
+#close:hover {
+    color: rgba(255, 255, 255, 0.6);
+}

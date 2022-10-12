@@ -28,6 +28,10 @@
 
 }
 
+.fa-facebook-f {
+    padding-left: 15px;
+}
+
 .contactDetails {
     line-height: 0.7;
     li {
@@ -47,13 +51,13 @@
 }
 
 input,
-textarea, {
+textarea {
     border: none;
     border-bottom: 1px solid #fff;
     background-color: transparent;
     color: #fff;
     font-family: $primaryFont;
-    padding: 10px 10px 20px 10px;
+    padding: 5px;
     @include fontSize(30);
 }
 

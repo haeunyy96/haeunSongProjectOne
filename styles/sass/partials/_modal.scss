@@ -1,0 +1,23 @@
+.modal {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100000;
+    width: 50%;
+    height:50%;
+    background-color: $secondary;
+    border-radius: 4px 4px;
+    border: solid 6px white;
+    color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+.spanClose {
+    font-size: 3rem;
+    cursor: pointer;
+    &:hover {
+        color: $primary;
+    }
+}

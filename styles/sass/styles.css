@@ -283,12 +283,14 @@ h1, h2, h3, h4, p {
 h1 {
   font-family: "Tulpen One";
   color: #FF8327;
+  font-size: 261.4px;
   font-size: 13.07rem;
   letter-spacing: 2.4px;
   line-height: 0.9;
 }
 
 h2 {
+  font-size: 83.2px;
   font-size: 4.16rem;
   font-weight: bold;
   line-height: 0;
@@ -296,6 +298,7 @@ h2 {
 }
 
 h3, h4 {
+  font-size: 68px;
   font-size: 3.4rem;
   font-weight: bold;
   line-height: 58px;
@@ -304,10 +307,12 @@ h3, h4 {
 }
 
 h4 {
+  font-size: 90px;
   font-size: 4.5rem;
 }
 
 p {
+  font-size: 39px;
   font-size: 1.95rem;
   line-height: 30px;
   letter-spacing: 1.9px;
@@ -315,6 +320,7 @@ p {
 }
 
 li {
+  font-size: 39px;
   font-size: 1.95rem;
 }
 
@@ -340,12 +346,14 @@ a {
 }
 
 .navBar {
+  font-size: 38px;
   font-size: 1.9rem;
   line-height: 29px;
   letter-spacing: 1.9px;
 }
 
 .button {
+  font-size: 35px;
   font-size: 1.75rem;
   font-family: "Tulpen One";
   background-color: #BF2603;
@@ -356,7 +364,6 @@ a {
 .button:hover, .button:focus {
   background-color: #FFFFFF;
   color: #BF2603;
-  transition: 500ms;
 }
 
 .commentButton,
@@ -385,6 +392,7 @@ a {
 
 .logo {
   font-family: "Tulpen One";
+  font-size: 60px;
   font-size: 3rem;
   text-transform: none;
 }
@@ -392,6 +400,21 @@ a {
 #hamburger,
 .slideOutNav {
   display: none;
+}
+
+#hamburger {
+  font-size: 1.5rem;
+}
+
+#hamburger, #close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+#close:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .indexHeader {
@@ -447,9 +470,7 @@ a {
 .info p {
   padding-left: 68px;
 }
-.textlink {
-  padding-left: 20px;
-}
+
 .plan {
   background-color: #220303;
   padding: 150px 0;
@@ -576,9 +597,9 @@ footer p {
   font-size: 20px;
   font-size: 1rem;
 }
-.contactIcon li a i:hover {
-  color: #FF8327;
-  transition: 500ms;
+
+.fa-facebook-f {
+  padding-left: 15px;
 }
 
 .contactDetails {
@@ -607,7 +628,7 @@ textarea {
   background-color: transparent;
   color: #fff;
   font-family: "Chathura";
-  padding: 5px 5px 5px 5px;
+  padding: 5px;
   font-size: 30px;
   font-size: 1.5rem;
 }
@@ -654,7 +675,7 @@ textarea {
 }
 
 .sideBarImg {
-  transform: translate(-30px, -25px);
+  transform: translate(-30px, -20px);
 }
 
 .blog {
@@ -731,9 +752,7 @@ textarea {
   margin: 0 0 10px 0;
   line-height: 0.4;
 }
-.commentEntry {
-  margin-bottom: 20px;
-}
+
 .blogForm input,
 .blogForm textarea {
   border-bottom: 1px solid #FF8327;
@@ -769,26 +788,9 @@ textarea {
   .navBar ul {
     display: none;
   }
-  #hamburger, #close {
-    font-size: 1.6rem;
+  #hamburger {
     display: flex;
     color: #FFFFFF;
-    background-color: transparent;
-    border: none;
-  }
-
-  #hamburger:hover, #close:hover {
-    color: rgba(255, 255, 255, 0.6);
-    cursor: pointer;
-    transition: 500ms;
-  }
-
-  #close {
-    padding-top: 10px;
-    font-size: 1.5rem;
-  }
-  .indexHeader {
-    min-height: 70vh;
   }
   .slideOutNav {
     display: flex;
@@ -814,22 +816,16 @@ textarea {
     align-self: flex-end;
   }
   .slideOutNav a {
-    line-height: 3rem;
-    font-size: 2.4rem;
+    line-height: 2.2rem;
   }
   .slideOutNav a:hover, .slideOutNav a:focus {
     color: rgba(255, 255, 255, 0.6);
   }
   .headerBannerFlex {
-    padding: 80px 0 150px 0;
-  
+    padding-top: 150px;
   }
   .headerBannerContainer {
     text-align: center;
-  }
-  h1 {
-    font-size: 10rem;
-    padding-bottom: 10px;
   }
   .indexHeader img,
 .blogHeader img,
@@ -844,10 +840,7 @@ textarea {
   }
   .info li {
     width: 100%;
-    padding: 15px;
-  }
-  .textlink {
-    padding-left: 10px;
+    padding: 10px;
   }
   .party {
     padding: 50px 0 70px;
@@ -861,9 +854,6 @@ textarea {
 .events .eventsTextContainer {
     width: 100%;
   }
-  .planAhead, .eventsTextContainer {
-    padding-top: 30px;
-  }
   .flexBlog {
     flex-direction: column;
   }
@@ -873,39 +863,32 @@ textarea {
   }
   .sideBar {
     text-align: center;
+    padding: 50px 0 50px 0;
   }
   .sideBarImgAndText {
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
   }
   .sideBarImg {
-    transform: none;
     width: 48%;
+    transform: none;
   }
   .sideBarTextContainer {
     width: 48%;
-  }
-  .sideBarTextContainer a:hover {
-    color: white;
-    transition: 500ms;
-  }
-  .ourMission{
-    margin: 15px 0;
-  }
-  .recentPostTitle {
-    margin: 5px 0 0 0;
-  }
-  .recentPost {
-    line-height: 0.9;
-    margin-bottom: 15px;
   }
   .blogImgAndText {
     padding: 5px;
   }
   .blogImgContainer img {
     transform: none;
+  }
+  .recentPostTitle {
+    margin: 0;
+  }
+  .recentPost {
+    line-height: 0.9;
   }
   .blogCommentsContainer {
     padding: 50px 30px;
@@ -946,4 +929,27 @@ textarea {
   .title {
     text-align: center;
   }
+}
+.modal {
+  display: flex;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100000;
+  width: 50%;
+  height: 50%;
+  background-color: #FF8327;
+  border-radius: 4px 4px;
+  border: solid 6px white;
+  color: black;
+  padding: 50px;
+  text-align: center;
+}
+
+.spanClose {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.spanClose:hover {
+  color: #FFFFFF;
 }/*# sourceMappingURL=styles.css.map */

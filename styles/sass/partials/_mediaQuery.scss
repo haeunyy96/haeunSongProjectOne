@@ -117,13 +117,20 @@
     }
     .sideBar {
         text-align: center;
+        padding: 50px 0 50px 0;
     }
     .sideBarImgAndText {
         padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .sideBarImg{
+        width: 48%;
         transform: none;
-        padding-bottom: 20px;
+    }
+    .sideBarTextContainer {
+        width: 48%;
     }
     .blogImgAndText {
         padding: 5px;
@@ -132,6 +139,12 @@
         img {
             transform: none;
         }
+    }
+    .recentPostTitle {
+        margin: 0;
+    }
+    .recentPost {
+        line-height: 0.9;
     }
     .blogCommentsContainer {
         padding: 50px 30px;
