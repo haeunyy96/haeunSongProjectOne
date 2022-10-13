@@ -1,13 +1,11 @@
 .modal {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
+    overflow: scroll;
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 100000;
     width: 50%;
-    height:50%;
+    height: 55%;
     background-color: $secondary;
     border-radius: 4px 4px;
     border: solid 6px white;
@@ -15,17 +13,10 @@
     padding: 50px;
     text-align: center;
 
-    img {
-        // width: 47%;
-        // align-items: flex-end;
-        // max-height: fit-content;
-        display: none;
-    }
-
     h3 {
         margin: 0;
     }
-
+    
     button {
         font-family: $primaryFont;
         font-size: 1.5rem;
@@ -35,11 +26,15 @@
         cursor: pointer;
         padding: 0 30px;
         margin-left: 10px;
-
+        
         &:hover {
             background-color: $primary;
             color: $secondary;
         }
+    }
+
+    p {
+        margin: 20px 0 0 0;
     }
 }
 .spanClose {

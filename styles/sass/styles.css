@@ -931,24 +931,19 @@ textarea {
   }
 }
 .modal {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  overflow: scroll;
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 100000;
   width: 50%;
-  height: 50%;
+  height: 55%;
   background-color: #FF8327;
   border-radius: 4px 4px;
   border: solid 6px white;
   color: black;
   padding: 50px;
   text-align: center;
-}
-.modal img {
-  display: none;
 }
 .modal h3 {
   margin: 0;
@@ -966,6 +961,9 @@ textarea {
 .modal button:hover {
   background-color: #FFFFFF;
   color: #FF8327;
+}
+.modal p {
+  margin: 20px 0 0 0;
 }
 
 .spanClose {
