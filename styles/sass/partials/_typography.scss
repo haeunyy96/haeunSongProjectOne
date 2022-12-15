@@ -19,7 +19,7 @@ h1 {
     font-family: $secondaryFont;
     color: $secondary;
     @include fontSize(261.4);
-    letter-spacing: 2.4px;
+    letter-spacing: 0.5rem;
     line-height: 0.9;
 }
 
@@ -39,7 +39,8 @@ h3, h4 {
 }
 
 h4 {
-    @include fontSize(90)
+    @include fontSize(90);
+    padding-left: 20px;
 }
 
 p {

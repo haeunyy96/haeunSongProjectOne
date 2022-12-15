@@ -285,7 +285,7 @@ h1 {
   color: #FF8327;
   font-size: 261.4px;
   font-size: 13.07rem;
-  letter-spacing: 2.4px;
+  letter-spacing: 0.5rem;
   line-height: 0.9;
 }
 
@@ -309,6 +309,7 @@ h3, h4 {
 h4 {
   font-size: 90px;
   font-size: 4.5rem;
+  padding-left: 20px;
 }
 
 p {
@@ -403,7 +404,8 @@ a {
 }
 
 #hamburger {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  padding-left: 20px;
 }
 
 #hamburger, #close {
@@ -723,7 +725,7 @@ textarea {
   padding-top: 50px;
 }
 .blogCommentsContainer h3 {
-  padding-bottom: 10px;
+  padding: 20px 0 10px 0;
 }
 
 .commentDisplay {
@@ -891,7 +893,7 @@ textarea {
     line-height: 0.9;
   }
   .blogCommentsContainer {
-    padding: 50px 30px;
+    padding: 0 0 0 30px;
   }
   .getInTouch {
     display: flex;
@@ -916,7 +918,29 @@ textarea {
     box-shadow: none;
   }
 }
+@media (max-width: 700px) {
+  .sideBarImgAndText {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sideBarTextContainer {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
+  .indexHeader {
+    height: 300px;
+  }
+  .headerBannerFlex {
+    padding-top: 80px;
+  }
+  h1 {
+    font-size: 8rem;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
   .gallery {
     padding: 50px 0;
   }
@@ -928,6 +952,33 @@ textarea {
   }
   .title {
     text-align: center;
+    margin-bottom: 0;
+  }
+  .sideBarTextContainer {
+    padding-right: 0;
+  }
+  .sulaire,
+.renzo {
+    flex-direction: column;
+  }
+  .sulaireText,
+.renzoText {
+    width: 100%;
+  }
+  .sulaire img,
+.renzo img {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .sulaireText h5,
+.renzoText h5 {
+    line-height: 0.5;
+  }
+  input {
+    width: 100%;
+  }
+  h4 {
+    font-size: 4rem;
   }
 }
 .modal {
