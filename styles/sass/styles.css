@@ -327,7 +327,7 @@ li {
 
 .wrapper {
   max-width: 1280px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -456,21 +456,15 @@ a {
 .info li {
   width: 48%;
   text-align: left;
-  padding: 30px;
   z-index: 999;
-}
-.info .fa-file {
-  padding: 15px 13px 15px 15px;
 }
 .info i {
   font-size: 25px;
   font-size: 1.25rem;
-  background-color: #BF2603;
-  padding: 12px 10px 12px 12px;
-  border-radius: 100%;
 }
-.info p {
-  padding-left: 68px;
+
+.hideInfo {
+  display: none;
 }
 
 .plan {
@@ -510,6 +504,13 @@ a {
   right: 0;
   bottom: -50px;
   box-shadow: -10px 10px #FF8327;
+}
+
+.hideInfo {
+  display: none;
+  left: 0;
+  top: -50px;
+  box-shadow: 10px 10px #FF8327;
 }
 
 .party {
@@ -766,24 +767,20 @@ textarea {
 @media (max-width: 1220px) {
   .plan {
     padding: 50px 0;
-    text-align: center;
-  }
-  .plan ul {
-    flex-direction: column;
   }
   .plan li {
-    width: 100%;
+    width: 48%;
+    text-align: left;
   }
   .plan img {
     position: static;
   }
-  .plan .location {
-    padding-top: 30px;
-    text-align: center;
-  }
   .plan .image2 {
     padding-top: 30px;
     box-shadow: 10px 10px #FF8327;
+  }
+  .location {
+    text-align: left;
   }
 }
 @media (max-width: 1000px) {
@@ -835,7 +832,7 @@ textarea {
     display: none;
   }
   .info {
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
   .info ul {
     flex-direction: column;
@@ -843,6 +840,20 @@ textarea {
   .info li {
     width: 100%;
     padding: 10px;
+  }
+  .hideInfo {
+    display: block;
+  }
+  .image2 {
+    display: none;
+  }
+  .plan {
+    padding-bottom: 0;
+  }
+  .plan li {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 25px;
   }
   .party {
     padding: 50px 0 70px;
@@ -929,7 +940,7 @@ textarea {
 }
 @media (max-width: 500px) {
   .indexHeader {
-    height: 300px;
+    min-height: 80vh;
   }
   .headerBannerFlex {
     padding-top: 80px;
@@ -937,6 +948,7 @@ textarea {
   h1 {
     font-size: 8rem;
     margin-bottom: 10px;
+    padding: 0 23px;
   }
   h2 {
     font-size: 3rem;

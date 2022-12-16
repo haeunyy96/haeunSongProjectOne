@@ -9,23 +9,14 @@
     li {
         width: 48%;
         text-align: left;
-        padding: 30px;
-            z-index: 999;
-    }
-    
-    .fa-file {
-        padding: 15px 13px 15px 15px;
+        z-index: 999;
     }
     i {
         @include fontSize(25);
-        background-color: $tertiary;
-        padding: 12px 10px 12px 12px;
-        border-radius: 100%;
-    }
-
-    p {
-        padding-left: 68px;
     }
 }
 
+.hideInfo {
+    display: none;
+}
 

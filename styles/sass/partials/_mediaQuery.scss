@@ -1,30 +1,24 @@
 @media (max-width:1220px) {
     .plan {
             padding: 50px 0;
-            text-align: center;
-
-            ul {
-                flex-direction: column;
-            }
 
             li {
-                width: 100%;
+                width: 48%;
+                text-align: left;
             }
 
             img {
                 position: static;
             }
 
-            .location {
-                padding-top: 30px;
-                text-align: center;
-            }
-
             .image2 {
                 padding-top: 30px;
                 box-shadow: 10px 10px $secondary;
             }
-        }
+    }
+    .location {
+        text-align: left;
+    }
 }
 @media (max-width:1000px) {
     .navBar {
@@ -86,14 +80,28 @@
         }
     }
      .info {
-        padding: 50px 0;
+        padding: 50px 0 0;
         ul {
             flex-direction: column;
         }
 
         li {
             width: 100%;
-            padding: 10px;
+            padding: 10px
+        }
+    }
+    .hideInfo {
+        display: block;
+    }
+    .image2 {
+        display: none;
+    }
+    .plan {
+        padding-bottom: 0;
+        li {
+            width: 100%;
+            text-align: left;
+            padding-bottom: 25px;
         }
     }
     .party {
@@ -183,7 +191,7 @@
 }
 @media (max-width:500px) {
     .indexHeader {
-        height: 300px;
+        min-height: 80vh;
     }
     .headerBannerFlex {
         padding-top: 80px;
@@ -191,6 +199,7 @@
     h1 {
        font-size: 8rem;
        margin-bottom: 10px;
+       padding: 0 23px;
     }
     h2 {
         font-size: 3rem;
