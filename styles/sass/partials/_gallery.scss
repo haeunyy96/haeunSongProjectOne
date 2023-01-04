@@ -10,4 +10,10 @@
     li {
         width: 32%;
     }
+
+    img {
+        &:hover {
+            transform: scale(110%);
+        }
+    }
 }

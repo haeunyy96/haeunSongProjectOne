@@ -461,6 +461,11 @@ a {
 .info i {
   font-size: 25px;
   font-size: 1.25rem;
+  color: #FF8327;
+}
+
+.textlink {
+  padding-left: 15px;
 }
 
 .plan {
@@ -500,13 +505,6 @@ a {
   right: 0;
   bottom: -50px;
   box-shadow: -10px 10px #FF8327;
-}
-
-.hideInfo {
-  display: none;
-  left: 0;
-  top: -50px;
-  box-shadow: 10px 10px #FF8327;
 }
 
 .party {
@@ -558,6 +556,9 @@ a {
 }
 .gallery li {
   width: 32%;
+}
+.gallery img:hover {
+  transform: scale(110%);
 }
 
 footer {
@@ -837,12 +838,6 @@ textarea {
     width: 100%;
     padding: 10px;
   }
-  .hideInfo {
-    display: block;
-  }
-  .image2 {
-    display: none;
-  }
   .plan {
     padding-bottom: 0;
   }
@@ -862,6 +857,10 @@ textarea {
   .events .eventsImgContainer,
 .events .eventsTextContainer {
     width: 100%;
+  }
+  .events .eventsImgContainer h3,
+.events .eventsTextContainer h3 {
+    padding-top: 20px;
   }
   .flexBlog {
     flex-direction: column;
@@ -932,6 +931,12 @@ textarea {
   }
   .sideBarTextContainer {
     width: 100%;
+  }
+  .sideBarImg {
+    width: 100%;
+  }
+  .ourMission {
+    padding-top: 20px;
   }
 }
 @media (max-width: 500px) {

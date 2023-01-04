@@ -64,7 +64,6 @@
             }
         }
     }
-    // SLIDE OUT NAV CODE CREDIT TO : E-COMMERCE CODE ALONG 
 
     .headerBannerFlex {
         padding-top: 150px;
@@ -90,12 +89,6 @@
             padding: 10px
         }
     }
-    .hideInfo {
-        display: block;
-    }
-    .image2 {
-        display: none;
-    }
     .plan {
         padding-bottom: 0;
         li {
@@ -114,6 +107,9 @@
         .eventsImgContainer,
         .eventsTextContainer{
             width: 100%;
+            h3 {
+                padding-top: 20px;
+            }
         }
     }
     .flexBlog {
@@ -187,6 +183,12 @@
     }
     .sideBarTextContainer {
         width: 100%;
+    }
+    .sideBarImg {
+        width: 100%;
+    }
+    .ourMission {
+        padding-top: 20px;
     }
 }
 @media (max-width:500px) {
