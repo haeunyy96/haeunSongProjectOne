@@ -492,7 +492,7 @@ a {
 }
 
 .location {
-  text-align: right;
+  margin-top: 50px;
 }
 
 .image1 {
@@ -502,9 +502,9 @@ a {
 }
 
 .image2 {
-  right: 0;
+  left: 0;
   bottom: -50px;
-  box-shadow: -10px 10px #FF8327;
+  box-shadow: 10px 10px #FF8327;
 }
 
 .party {
@@ -538,6 +538,7 @@ a {
 
 .eventsTextContainer {
   width: 66%;
+  padding-left: 30px;
 }
 .eventsTextContainer h3 {
   color: #FF8327;
@@ -773,11 +774,11 @@ textarea {
     position: static;
   }
   .plan .image2 {
-    padding-top: 30px;
+    margin-top: 30px;
     box-shadow: 10px 10px #FF8327;
   }
   .location {
-    text-align: left;
+    margin-top: 30px;
   }
 }
 @media (max-width: 1000px) {
@@ -838,13 +839,13 @@ textarea {
     width: 100%;
     padding: 10px;
   }
-  .plan {
-    padding-bottom: 0;
-  }
   .plan li {
     width: 100%;
     text-align: left;
     padding-bottom: 25px;
+  }
+  .location {
+    margin-top: 10px;
   }
   .party {
     padding: 50px 0 70px;
@@ -857,6 +858,7 @@ textarea {
   .events .eventsImgContainer,
 .events .eventsTextContainer {
     width: 100%;
+    padding-left: 0;
   }
   .events .eventsImgContainer h3,
 .events .eventsTextContainer h3 {

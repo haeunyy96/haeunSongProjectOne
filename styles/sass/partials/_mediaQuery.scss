@@ -12,13 +12,14 @@
             }
 
             .image2 {
-                padding-top: 30px;
+                margin-top: 30px;
                 box-shadow: 10px 10px $secondary;
             }
     }
     .location {
-        text-align: left;
+        margin-top:30px;
     }
+    
 }
 @media (max-width:1000px) {
     .navBar {
@@ -90,12 +91,14 @@
         }
     }
     .plan {
-        padding-bottom: 0;
         li {
             width: 100%;
             text-align: left;
             padding-bottom: 25px;
         }
+    }
+    .location {
+        margin-top:10px;
     }
     .party {
         padding: 50px 0 70px;
@@ -107,6 +110,7 @@
         .eventsImgContainer,
         .eventsTextContainer{
             width: 100%;
+            padding-left: 0;
             h3 {
                 padding-top: 20px;
             }

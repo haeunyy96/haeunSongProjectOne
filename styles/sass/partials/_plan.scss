@@ -27,7 +27,7 @@
 }
 
 .location {
-    text-align: right;
+    margin-top: 50px;
 }
 
 .image1 {
@@ -37,8 +37,8 @@
 }
 
 .image2 {
-    right: 0;
+    left: 0;
     bottom: -50px;
-    box-shadow: -10px 10px $secondary;
+    box-shadow: 10px 10px $secondary;
 
 }
