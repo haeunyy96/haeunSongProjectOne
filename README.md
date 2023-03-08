@@ -1,5 +1,3 @@
-# haeunSongProjectOne
-
 Hi there 👋🏽
 
 Welcome to my Project Repo!
