@@ -1,6 +1,6 @@
 <img width="765" alt="barone" src="https://user-images.githubusercontent.com/107310198/223764338-0e403039-6a6d-4bdd-bc13-46de5d26c574.png">
 
-Hi there 👋🏽
+Hi there 👋
 
 Welcome to my Project Repo!
 
